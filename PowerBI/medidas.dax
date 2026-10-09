@@ -1,0 +1,8 @@
+Energia total kWh = SUM('fact_energia_dia'[energia_kwh])
+
+Porcentaje datos validos =
+DIVIDE(
+    SUM('fact_energia_dia'[lecturas_validas]),
+    SUM('fact_energia_dia'[lecturas_validas]) + SUM('fact_energia_dia'[lecturas_rechazadas]),
+    0
+)*100
