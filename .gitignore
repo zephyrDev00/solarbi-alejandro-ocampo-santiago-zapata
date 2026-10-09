@@ -1,0 +1,8 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+*.pbix
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
+grafana/secrets.yml
